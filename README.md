@@ -110,7 +110,7 @@ Ensure you have the following installed:
 
 ```bash
 # Clone or download the project
-git clone <repository-url>
+git clone https://github.com/VedaShivayogi/Online-Shopping-Database-Management-System
 cd Online-Shopping-Database-Management-System-main
 ```
 
@@ -415,9 +415,6 @@ Parameters: payment_method, shipping_address
 - Check internet connectivity
 - Review payment logs in checkout_process.php
 
-## 📝 License
-
-[Specify your license here]
 
 ## 👨‍💻 Contributing
 
