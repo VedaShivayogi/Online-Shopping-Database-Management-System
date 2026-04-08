@@ -1,11 +1,4 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.2
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Apr 23, 2019 at 07:53 PM
--- Server version: 10.1.34-MariaDB
--- PHP Version: 7.2.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -13,10 +6,7 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+
 
 --
 -- Database: `ecommerece`
@@ -151,8 +141,8 @@ CREATE TABLE `email_info` (
 
 INSERT INTO `email_info` (`email_id`, `email`) VALUES
 (3, 'admin@gmail.com'),
-(4, 'puneethreddy951@gmail.com'),
-(5, 'puneethreddy@gmail.com');
+(4, 'vedaram@gmail.com'),
+(5, 'vedaram@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -218,7 +208,7 @@ CREATE TABLE `orders_info` (
 --
 
 INSERT INTO `orders_info` (`order_id`, `user_id`, `f_name`, `email`, `address`, `city`, `state`, `zip`, `cardname`, `cardnumber`, `expdate`, `prod_count`, `total_amt`, `cvv`) VALUES
-(1, 12, 'Puneeth', 'puneethreddy951@gmail.com', 'Bangalore, Kumbalagodu, Karnataka', 'Bangalore', 'Karnataka', 560074, 'pokjhgfcxc', '4321 2345 6788 7654', '12/90', 3, 77000, 1234);
+(1, 12, 'Puneeth', 'vedaram@gmail.com', 'Bangalore, Kumbalagodu, Karnataka', 'Bangalore', 'Karnataka', 560074, 'pokjhgfcxc', '4321 2345 6788 7654', '12/90', 3, 77000, 1234);
 
 -- --------------------------------------------------------
 
@@ -359,15 +349,12 @@ CREATE TABLE `user_info` (
 --
 
 INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) VALUES
-(12, 'puneeth', 'Reddy', 'puneethreddy951@gmail.com', 'puneeth', '9448121558', '123456789', 'sdcjns,djc'),
-(15, 'hemu', 'ajhgdg', 'puneethreddy951@gmail.com', '346778', '536487276', ',mdnbca', 'asdmhmhvbv'),
-(16, 'venky', 'vs', 'venkey@gmail.com', '1234534', '9877654334', 'snhdgvajfehyfygv', 'asdjbhfkeur'),
-(19, 'abhishek', 'bs', 'abhishekbs@gmail.com', 'asdcsdcc', '9871236534', 'bangalore', 'hassan'),
-(21, 'prajval', 'mcta', 'prajvalmcta@gmail.com', '1234545662', '202-555-01', 'bangalore', 'kumbalagodu'),
-(22, 'puneeth', 'v', 'hemu@gmail.com', '1234534', '9877654334', 'snhdgvajfehyfygv', 'asdjbhfkeur'),
-(23, 'hemanth', 'reddy', 'hemanth@gmail.com', 'Puneeth@123', '9876543234', 'Bangalore', 'Kumbalagodu'),
-(24, 'newuser', 'user', 'newuser@gmail.com', 'puneeth@123', '9876541230', 'Bangalore', 'Kumbalagodu'),
-(25, 'otheruser', 'user', 'otheruser@gmail.com', 'puneeth@123', '9876541230', 'Bangalore', 'Kumbalagodu');
+(12, 'Veda', 'Ram', 'vedaram@gmail.com', 'veda@veda', '9876543210', 'Byadgi', 'Haveri'),
+(15, 'Dhanu', 'G', 'dhanug@gmail.com', '346778*dhanu', '9568743205', 'Bangalore', 'Chikkabalapur'),
+(16, 'Sai', 'K', 'saik@gmail.com', 'Sai@123', '94856792310', 'Bangalore', 'KGF'),
+(19, 'Ayusha', 'K', 'ayushak@gmail.com', 'kkjnjkl@kj', '9685743210', 'Bangalore', 'Dharawad'),
+(21, 'Anju', 'Teli', 'anjuteli@gmail.com', '1234545662', '9865321470', 'Belagam', 'Byadgi')
+
 
 --
 -- Triggers `user_info`
@@ -401,18 +388,11 @@ CREATE TABLE `user_info_backup` (
 --
 
 INSERT INTO `user_info_backup` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) VALUES
-(12, 'puneeth', 'Reddy', 'puneethreddy951@gmail.com', '123456789', '9448121558', '123456789', 'sdcjns,djc'),
-(14, 'hemanthu', 'reddy', 'hemanthreddy951@gmail.com', '123456788', '6526436723', 's,dc wfjvnvn', 'b efhfhvvbr'),
-(15, 'hemu', 'ajhgdg', 'keeru@gmail.com', '346778', '536487276', ',mdnbca', 'asdmhmhvbv'),
-(16, 'venky', 'vs', 'venkey@gmail.com', '1234534', '9877654334', 'snhdgvajfehyfygv', 'asdjbhfkeur'),
-(19, 'abhishek', 'bs', 'abhishekbs@gmail.com', 'asdcsdcc', '9871236534', 'bangalore', 'hassan'),
-(20, 'pramod', 'vh', 'pramod@gmail.com', '124335353', '9767645653', 'ksbdfcdf', 'sjrgrevgsib'),
-(21, 'prajval', 'mcta', 'prajvalmcta@gmail.com', '1234545662', '202-555-01', 'bangalore', 'kumbalagodu'),
-(22, 'puneeth', 'v', 'hemu@gmail.com', '1234534', '9877654334', 'snhdgvajfehyfygv', 'asdjbhfkeur'),
-(23, 'hemanth', 'reddy', 'hemanth@gmail.com', 'Puneeth@123', '9876543234', 'Bangalore', 'Kumbalagodu'),
-(24, 'newuser', 'user', 'newuser@gmail.com', 'puneeth@123', '9876541230', 'Bangalore', 'Kumbalagodu'),
-(25, 'otheruser', 'user', 'otheruser@gmail.com', 'puneeth@123', '9876541230', 'Bangalore', 'Kumbalagodu');
-
+(12, 'Veda', 'Ram', 'vedaram@gmail.com', 'veda@veda', '9876543210', 'Byadgi', 'Haveri'),
+(15, 'Dhanu', 'G', 'dhanug@gmail.com', '346778*dhanu', '9568743205', 'Bangalore', 'Chikkabalapur'),
+(16, 'Sai', 'K', 'saik@gmail.com', 'Sai@123', '94856792310', 'Bangalore', 'KGF'),
+(19, 'Ayusha', 'K', 'ayushak@gmail.com', 'kkjnjkl@kj', '9685743210', 'Bangalore', 'Dharawad'),
+(21, 'Anju', 'Teli', 'anjuteli@gmail.com', '1234545662', '9865321470', 'Belagam', 'Byadgi')
 --
 -- Indexes for dumped tables
 --
