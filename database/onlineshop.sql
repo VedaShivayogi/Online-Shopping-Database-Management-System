@@ -23,7 +23,7 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin_info`
+-- The Table structure for table `admin_info`
 --
 
 CREATE TABLE `admin_info` (
