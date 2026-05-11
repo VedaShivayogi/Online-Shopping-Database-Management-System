@@ -415,6 +415,8 @@ Parameters: payment_method, shipping_address
 - Check internet connectivity
 - Review payment logs in checkout_process.php
 
+  ---------------------------------------
+
 
 
 
