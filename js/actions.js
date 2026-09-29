@@ -7,7 +7,7 @@ $(document).ready(function(){
     producthome();
     
     
-	//cat() is a funtion fetching category record from database whenever page is load
+	//cat() is a funtion fetching category record from database whenever page is load data
 	function cat(){
 		$.ajax({
 			url	:	"action.php",
