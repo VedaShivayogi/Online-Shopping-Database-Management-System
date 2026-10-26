@@ -1,4 +1,4 @@
-### <b> Online Shopping Database Management System </b>
+#### <b> Online Shopping Database Management System </b>
 
 A comprehensive e-commerce platform with an admin dashboard for managing products, users, suppliers, and orders. Built with PHP and MySQL, this system provides a complete solution for online retail operations.
 
